@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Game</title>
+
+    <!-- style link -->
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <div id="startManu" class="startManu">
+        <button id="playBtn">play Game</button>
+        <button>setting</button>
+    </div>
+    
+    <div id="gameContent" class="gameContent">
+        <div class="score">000</div>
+        <div id="roadSction" class="roadSction">
+            <div class="car">
+                <div id="myCar" class="myCar"></div>
+            </div>
+
+            <div class="enimyCars">
+                <div class="enimyCar car1"></div>
+                <div class="enimyCar car2"></div>
+                <div class="enimyCar car3"></div>
+                <div class="enimyCar car4"></div>
+            </div>
+
+            <div class="roadLine">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="gameEnd">
+        <p>Game Over your score <span id="gameOverScore"></span></p>
+        <button id="close">Close</button>
+    </div>
+
+    <div class="musicScetion">
+        <audio id="carCrash" src="gameMusic/carCrash.mp3"></audio>
+        <audio id="manuBg" src="gameMusic/manuBg.mp3"></audio>
+        <audio id="playBg" src="gameMusic/playBg.mp3"></audio>
+        <audio id="click" src="gameMusic/click.mp3"></audio>
+    </div>
+
+
+
+    <!-- javaScript link up -->
+    <script src="javaScript/app.js"></script>
+</body>
+</html>
